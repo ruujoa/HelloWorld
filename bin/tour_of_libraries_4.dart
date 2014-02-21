@@ -15,4 +15,9 @@ void main() {
   config.readAsLines(encoding: Encoding.getByName('UTF-8')).then((List<String> lines) {
     print('The entire file is ${lines.length} lines long.');
   });
+  
+  // Reading a file as binary
+  config.readAsBytes().then((List<int> contents) {
+    print('The entire file is ${contents.length} bytes long.');
+  });
 }
