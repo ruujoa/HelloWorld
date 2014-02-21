@@ -2,6 +2,7 @@ library tour_of_libraries_4;
 
 import 'dart:io';
 import 'dart:convert';
+//import 'dart:async';
 
 void main() {
   var config = new File('config.txt');
@@ -20,4 +21,13 @@ void main() {
   config.readAsBytes().then((List<int> contents) {
     print('The entire file is ${contents.length} bytes long.');
   });
+  
+  // Writing file contents
+  var out = config.openWrite(mode: FileMode.APPEND, encoding: Encoding.getByName('UTF-8'));
+  out.write('\nFILE ACCESSED ${new DateTime.now()}');
+  out.close();
+  
+  // Listing files in a directory
+  var dir = new Directory('../bin');
+  dir.list(recursive: true).forEach((item) => print(item));
 }
