@@ -2,7 +2,7 @@ HelloWorld
 ==========
 ### The sample code of the book named 'Dart: Up and running'
 	1. Preparation
-		a. Download Google Dart from [Here](https://www.dartlang.org)
+		a. Download Google Dart from [Here](https://www.dartlang.org/)
 	2. Installation
 		a. Unzip the zip to a directory, for example: E:\Tools\Dart
   		b. Double click the executable program named DartEditor under above unzipped directory to open an IDE for Dart.
